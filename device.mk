@@ -669,4 +669,9 @@ ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
       persist.vendor.usb.usbradio.config=diag
 endif
 
+# Display Calibration
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm \
+    vendor.lineage.livedisplay@2.0-service-sysfs
+
 -include device/google/wahoo/device-carbon.mk
